@@ -56,7 +56,8 @@ python test.py --dataroot ./datasets/tes_set --direction BtoA --model pix2pix --
 ![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/03.PNG)
 ![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/04.PNG)
 ![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/05.PNG)
-Trained with larger datasets
+
+ Trained with larger datasets
 ![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained_3/test_latest/html_img/01.PNG)
 ![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained_3/test_latest/html_img/02.PNG)
 ![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained_3/test_latest/html_img/03.PNG)
@@ -69,10 +70,7 @@ Trained with larger datasets
 
 
 ## Technical Notes
-
-Any implementation details or notes we need to repeat your work. 
-- Does this code require other pip packages, software, etc?
-- Does it run on some other (non-datahub) platform? (CoLab, etc.)
+- pix2pix model in pytorch runs on datahub but it failed to setup the web localhost. Anyway, the models can train the images and generate the images
 
 ## Reference
 
