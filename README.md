@@ -1,6 +1,7 @@
 # Final Project
 
 Kin Loh, kmloh@ucsd.edu
+Zhuoqun Xu, zhx068@ucsd.edu
 
 ## Abstract Proposal
 
@@ -11,7 +12,7 @@ In this final project, we continue to explore futher on one of our past project 
 Upload your project report (4 pages) as a pdf with your repository, following this template: [google docs](https://docs.google.com/document/d/133H59WZBmH6MlAgFSskFLMQITeIC5d9b2iuzsOfa4E8/edit?usp=sharing).
 
 ## Model/Data
--pretrained_model/ -- contained a zipped sketch2tiger_pretrained_3 folder 
+- pretrained_model/ -- contained a zipped sketch2tiger_pretrained_3 folder 
 
 ##  Raw Data
 - raw_data/ -- contained images and sketches of tiger and cat 
@@ -49,9 +50,22 @@ python test.py --dataroot ./datasets/tes_set --direction BtoA --model pix2pix --
 ```
 
 ## Results
+ Trained with smaller datasets
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/01.PNG)
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/02.PNG)
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/03.PNG)
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/04.PNG)
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/05.PNG)
+Trained with larger datasets
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained_3/test_latest/html_img/01.PNG)
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained_3/test_latest/html_img/02.PNG)
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained_3/test_latest/html_img/03.PNG)
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained_3/test_latest/html_img/04.PNG)
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained_3/test_latest/html_img/05.PNG)
+
 
 ## Others
-- my_util_tools -- python script to rename/copy the images
+- my_util_tool -- python script to rename/copy/remove the images
 
 
 ## Technical Notes
