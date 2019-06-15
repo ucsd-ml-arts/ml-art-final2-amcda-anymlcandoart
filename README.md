@@ -9,7 +9,7 @@ In this final project, we continue to explore futher on one of our past project 
 
 ## Project Report
 
-Upload your project report (4 pages) as a pdf with your repository, following this template: [google docs](https://docs.google.com/document/d/1kE-agHuRC_bBl2EnncHnztSThetzrE6Ff3O_F1e9Jdk/edit?usp=sharing).
+Final Report: [google docs](https://docs.google.com/document/d/1kE-agHuRC_bBl2EnncHnztSThetzrE6Ff3O_F1e9Jdk/edit?usp=sharing).
 
 ## Model/Data
 - pretrained_model/countour2tiger  --- zipped version of contour2tiger model
@@ -111,17 +111,17 @@ python test.py --dataroot ./datasets/tes_set --direction BtoA --model pix2pix --
 ## Results
  - More details are in the report
  
- - results\contour2tiger_trained_model\tes_set2
- - results\contour2tiger_trained_model\tes-set
- - results\sketch2tiger_trained_model\test_set_example1
- - results\sketch2tiger_trained_model\test_set_example2
+ - results\contour2tiger_trained_model\tes_set2\index.html
+ - results\contour2tiger_trained_model\tes-set\index.html
+ - results\sketch2tiger_trained_model\test_set_example1\index.html
+ - results\sketch2tiger_trained_model\test_set_example2\index.html
 
- - Sample generated image
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained(small_dataset)/small_dataset/html_imgs/01.PNG)
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained(small_dataset)/small_dataset/html_imgs/02.PNG)
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained(small_dataset)/small_dataset/html_imgs/03.PNG)
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained(small_dataset)/small_dataset/html_imgs/04.PNG)
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained(small_dataset)/small_dataset/html_imgs/05.PNG)
+ - Sample image test_set_example_2 using contour2tiger pretrained model
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sample/01.PNG)
+
+ - Sample image test_set_example_1 using sketch2tiger pretrained model
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sample/02.PNG)
+
 
 ## Others
 - my_util_tool -- python script to rename/copy/remove the images
@@ -129,7 +129,7 @@ python test.py --dataroot ./datasets/tes_set --direction BtoA --model pix2pix --
 
 ## Technical Notes
 - pix2pix model in pytorch runs on datahub but it failed to setup the web localhost. Anyway, the models can train the images and generate the images
-- HED model runs on my own machine due to some dependency issue
+- HED model runs on our own machine due to some dependency issue on datahub
 
 ## Reference
 
@@ -137,3 +137,4 @@ python test.py --dataroot ./datasets/tes_set --direction BtoA --model pix2pix --
 - dataset from sketchyGAN [Link1](http://sketchy.eye.gatech.edu/) [Link2](https://goo.gl/SNpMmK)
 - [dataset from cyclegan pytorch](https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/)
 - [ImageNet](www.image-net.org/)
+- [HED model](https://github.com/moabitcoin/holy-edge)
