@@ -12,14 +12,69 @@ In this final project, we continue to explore futher on one of our past project 
 Upload your project report (4 pages) as a pdf with your repository, following this template: [google docs](https://docs.google.com/document/d/133H59WZBmH6MlAgFSskFLMQITeIC5d9b2iuzsOfa4E8/edit?usp=sharing).
 
 ## Model/Data
-- pretrained_model/ -- contained a zipped sketch2tiger_pretrained_3 folder 
+- pretrained_model/countour2tiger  --- zipped version of contour2tiger model
+- pretrained_model/sketch2tiger   --- zipped version of sketch2tiger model
 
 ##  Raw Data
-- raw_data/ -- contained images and sketches of tiger and cat 
+### contained images/sketches/contour of tiger and cat
+- data(from_sketchy)
+- generated_contour
+- cat zipped dataset 
 
 ## Code
+###part A
 
-0. get the repo from [here](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+
+0. get the HED repository
+```
+git clone https://github.com/moabitcoin/holy-edge.git
+```
+1. requirements
+```
+cd holy-edge
+pip install -r requirements.txt
+export OMP_NUM_THREADS=1
+```
+
+2. download pretrained model [here](https://mega.nz/#!YU1FWJrA!O1ywiCS2IiOlUCtCpI6HTJOMrneN-Qdv3ywQP5poecM)
+
+3. Use this to verify the pretrained model
+```
+19ff134af12b6ea0c0ff35664b031ba5 hed/models/vgg16.npy
+```
+4. manually download the HED model that is trained on augmented training set created by the authors if necessery [here](http://vcl.ucsd.edu/hed/HED-BSDS.tar)
+
+5. set up the config file located at hed/configs/hed.yaml
+
+```
+# location where training data : http://vcl.ucsd.edu/hed/HED-BSDS.tar would be downloaded and decompressed
+download_path: '<path>'
+# location of snapshot and tensorbaord summary events
+save_dir: '<path>'
+# location where to put the generated edgemaps during testing
+test_output: '<path>'
+```
+
+6. put images into a test folder in HED-BSDS(from step 4)
+7. update the filename in the test folder accordingly in test.lst
+8. edit the config yml based on the input dimension of the file in test folder.
+_testing with the pretrained model_
+9. edit your config file located at hed/configs/hed.yaml to change the location of the pre-trained HED model
+```
+save_dir: <path_to_repo_on_disk>/hed
+test_snapshot: 5000
+# location where to put the generated edgemaps during testing
+test_output: '<path>'
+```
+_run prediction_
+```
+CUDA_VISIBLE_DEVICES=1 python run-hed.py --test --config-file hed/configs/hed.yaml --gpu-limit 0.4
+feh <test_output>
+```
+
+###Part B
+
+0. get the pix2pix repo from [here](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
 ```
 git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 ```
@@ -48,6 +103,8 @@ After training is done. The trained model will be generated in checkpoints folde
 ```
 python test.py --dataroot ./datasets/tes_set --direction BtoA --model pix2pix --name sketch2tiger_pretrained_3
 ```
+
+
 
 ## Results
  Trained with smaller datasets
