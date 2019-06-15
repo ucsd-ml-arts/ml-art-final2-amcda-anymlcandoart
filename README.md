@@ -22,7 +22,7 @@ Upload your project report (4 pages) as a pdf with your repository, following th
 - cat zipped dataset 
 
 ## Code
-###part A
+### part A
 
 
 0. get the HED repository
@@ -58,6 +58,7 @@ test_output: '<path>'
 6. put images into a test folder in HED-BSDS(from step 4)
 7. update the filename in the test folder accordingly in test.lst
 8. edit the config yml based on the input dimension of the file in test folder.
+
 _testing with the pretrained model_
 9. edit your config file located at hed/configs/hed.yaml to change the location of the pre-trained HED model
 ```
@@ -72,7 +73,7 @@ CUDA_VISIBLE_DEVICES=1 python run-hed.py --test --config-file hed/configs/hed.ya
 feh <test_output>
 ```
 
-###Part B
+### Part B
 
 0. get the pix2pix repo from [here](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
 ```
@@ -107,7 +108,8 @@ python test.py --dataroot ./datasets/tes_set --direction BtoA --model pix2pix --
 
 
 ## Results
- Trained with smaller datasets
+ - More details are in the report
+ - Sample generated image 
 ![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/01.PNG)
 ![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/02.PNG)
 ![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/03.PNG)
@@ -128,6 +130,7 @@ python test.py --dataroot ./datasets/tes_set --direction BtoA --model pix2pix --
 
 ## Technical Notes
 - pix2pix model in pytorch runs on datahub but it failed to setup the web localhost. Anyway, the models can train the images and generate the images
+- HED model runs on my own machine due to some dependency issue
 
 ## Reference
 
