@@ -25,7 +25,7 @@ Final Report: [google docs](https://docs.google.com/document/d/1kE-agHuRC_bBl2En
 ### part A
 
 
-0. get the HED repository
+0. get the HED repository [HED model](https://github.com/moabitcoin/holy-edge)
 ```
 git clone https://github.com/moabitcoin/holy-edge.git
 ```
