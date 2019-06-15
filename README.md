@@ -9,7 +9,7 @@ In this final project, we continue to explore futher on one of our past project 
 
 ## Project Report
 
-Upload your project report (4 pages) as a pdf with your repository, following this template: [google docs](https://docs.google.com/document/d/133H59WZBmH6MlAgFSskFLMQITeIC5d9b2iuzsOfa4E8/edit?usp=sharing).
+Upload your project report (4 pages) as a pdf with your repository, following this template: [google docs](https://docs.google.com/document/d/1kE-agHuRC_bBl2EnncHnztSThetzrE6Ff3O_F1e9Jdk/edit?usp=sharing).
 
 ## Model/Data
 - pretrained_model/countour2tiger  --- zipped version of contour2tiger model
@@ -18,7 +18,7 @@ Upload your project report (4 pages) as a pdf with your repository, following th
 ##  Raw Data
 ### contained images/sketches/contour of tiger and cat
 - data(from_sketchy)
-- generated_contour
+- generated_contour( from HED)
 - cat zipped dataset 
 
 ## Code
@@ -60,6 +60,7 @@ test_output: '<path>'
 8. edit the config yml based on the input dimension of the file in test folder.
 
 _testing with the pretrained model_
+
 9. edit your config file located at hed/configs/hed.yaml to change the location of the pre-trained HED model
 ```
 save_dir: <path_to_repo_on_disk>/hed
@@ -109,20 +110,18 @@ python test.py --dataroot ./datasets/tes_set --direction BtoA --model pix2pix --
 
 ## Results
  - More details are in the report
- - Sample generated image 
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/01.PNG)
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/02.PNG)
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/03.PNG)
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/04.PNG)
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained/small_dataset/html_imgs/05.PNG)
+ 
+ - results\contour2tiger_trained_model\tes_set2
+ - results\contour2tiger_trained_model\tes-set
+ - results\sketch2tiger_trained_model\test_set_example1
+ - results\sketch2tiger_trained_model\test_set_example2
 
- Trained with larger datasets
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained_3/test_latest/html_img/01.PNG)
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained_3/test_latest/html_img/02.PNG)
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained_3/test_latest/html_img/03.PNG)
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained_3/test_latest/html_img/04.PNG)
-![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained_3/test_latest/html_img/05.PNG)
-
+ - Sample generated image
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained(small_dataset)/small_dataset/html_imgs/01.PNG)
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained(small_dataset)/small_dataset/html_imgs/02.PNG)
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained(small_dataset)/small_dataset/html_imgs/03.PNG)
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained(small_dataset)/small_dataset/html_imgs/04.PNG)
+![](https://github.com/ucsd-ml-arts/ml-art-final2-amcda-anymlcandoart/blob/kin/results/sketch2tiger_pretrained(small_dataset)/small_dataset/html_imgs/05.PNG)
 
 ## Others
 - my_util_tool -- python script to rename/copy/remove the images
